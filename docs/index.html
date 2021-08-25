@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>Питомник мейн-кунов</title>
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__logo-wrapper"><a class="page-header__logo"></a></div>
-    <section class="about-header">
+    <section class="about-header section">
       <p class="about-header__from">Новосибирск</p>
-      <h1 class="title">Питомник Мейн-Кунов</h1>
+      <h1 class="about-header__title title">Питомник Мейн-Кунов</h1>
       <p class="about-header__description">Первый питомник с расширенным спектром услуг</p>
       <div class="about-header__link-wrapper">
-        <a href="#" class="about-header__link">Смотреть котиков</a>
+        <a href="#" class="about-header__link btn">Смотреть котиков</a>
       </div>
     </section>
     <nav class="nav"></nav>
   </header>
   <main class="page-main">
-    <section class="catalog">
-      <h2 class="catalog__title">Питомцы</h2>
+    <section class="catalog section">
+      <h2 class="catalog__title section__title">Питомцы</h2>
       <p class="catalog__description">Все представители нашего питомника имеют ветеринарный паспорт с отметками о
         прививках и документ с родословной</p>
       <ul class="catalog__sortind-list">
-        <li class="catalog__sorting-item">Коты</li>
-        <li class="catalog__sorting-item">Кошки</li>
-        <li class="catalog__sorting-item">Котята</li>
+        <li class="catalog__sorting-item"><a href="#" class="catalog__sorting-link catalog__sorting-link--current">Коты</a></li>
+        <li class="catalog__sorting-item"><a href="#" class="catalog__sorting-link">Кошки</a></li>
+        <li class="catalog__sorting-item"><a href="#" class="catalog__sorting-link">Котята</a></li>
       </ul>
       <ul class="catalog__list">
         <li class="catalog__item"></li>
         <li class="catalog__item"></li>
         <li class="catalog__item"></li>
       </ul>
-      <a class="catalog__link">Смотреть больше</a>
+      <a href="#" class="catalog__link btn">Смотреть больше</a>
     </section>
-    <section class="features">
-      <h2 class="features__title">Особенности породы</h2>
+    <section class="features section">
+      <h2 class="features__title section__title">Особенности породы</h2>
       <p class="features__description">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом
         этого питомца, вы получите умное животное, которому нет равных </p>
       <ul class="features__list">
@@ -49,8 +50,8 @@
         <li class="features__item">Внешний вид этой кошки похож на дикую рысь</li>
       </ul>
     </section>
-    <section class="about">
-      <h2 class="about__title">Почему именно мы?</h2>
+    <section class="about section">
+      <h2 class="about__title section__title">Почему именно мы?</h2>
       <p class="about__description">Приобретая животное в нашем питомнике, вы получите</p>
       <ul class="about__list">
         <li class="about__item">Бесплатное ветеринарное обслуживание 5 лет</li>
@@ -58,8 +59,8 @@
         <li class="about__item">Индивидуальный подбор питания для вашего кота</li>
       </ul>
     </section>
-    <section class="care">
-      <h2 class="care__title">Об уходе за Мейн-Куном</h2>
+    <section class="care section">
+      <h2 class="care__title section__title">Об уходе за Мейн-Куном</h2>
       <ul class="care__list">
         <li class="care__item">
           <a href="" class="care__link">
@@ -93,8 +94,8 @@
         </li>
       </ul>
     </section>
-    <section class="staff">
-      <h2 class="staff__title">Наша команда</h2>
+    <section class="staff section">
+      <h2 class="staff__title section__title">Наша команда</h2>
       <p class="staff__description">Все сотрудники нашего питомника дипломированые специалисты
         в области фелинологии и ветеринарии</p>
       <div class="staff__slider slider">
@@ -118,8 +119,8 @@
         </button>
       </div>
     </section>
-    <section class="faq">
-      <h2 class="faq__title">Вопрос-Ответ</h2>
+    <section class="faq section">
+      <h2 class="faq__title section__title">Вопрос-Ответ</h2>
       <p class="faq__description">Мы ответим на самые популярные ваши вопросы</p>
       <div class="faq__list">
         <div class="faq__item faq__item-wrapper">
@@ -150,13 +151,13 @@
         </div>
       </div>
     </section>
-    <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
+    <section class="reviews section">
+      <h2 class="reviews__title section__title">Отзывы</h2>
       <div class="reviews__slider">
         <div class="reviews__item">
           <blockquote class="reviews__bq">
             <cite class="reviews__item-title">Серёжа Попов</cite>
-            <p>Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом
+            <p class="reviews__item-comment">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом
               питомника является возможность консультироваться в любое время</p>
           </blockquote>
           <div class="reviews__item-content">

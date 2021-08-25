@@ -1,2 +1,184 @@
+.btn {
+  font-weight: 700;
+  color: white;
+  line-height: 14.06px;
+  padding: 15px 19px;
+  border: 0.5px solid #A07B50;
+  display: block;
+  width: 141px;
+  margin: 0 auto;
+}
+@media (min-width: 770px) {
+  .btn {
+    width: 200px;
+  }
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../../fonts/yesevaone.woff2") format("woff2"), url("../../fonts/yesevaone.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotolight.woff2") format("woff2"), url("../fonts/Robotolight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotomedium.woff2"), url("../fonts/Robotomedium.woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotobold.woff2") format("woff2"), url("../fonts/Robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.about {
+  text-align: center;
+  background-color: #181617;
+}
+.about__description {
+  color: #A07B50;
+}
+.about__list {
+  padding: 0;
+  list-style: none;
+}
+.about-header {
+  color: #A07B50;
+  text-align: center;
+}
+.about-header__from {
+  line-height: 21px;
+}
+.about-header__title {
+  color: white;
+  font-family: "Yeseva One", "Arial", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0;
+  text-align: center;
+}
+.care {
+  background-color: #1F1C1D;
+}
+.care__list {
+  padding: 0;
+  list-style: none;
+}
+.care__link-title {
+  font-weight: bold;
+  color: #A07B50;
+}
+.care__link-content {
+  color: white;
+}
+.catalog {
+  text-align: center;
+  background-color: #1F1C1D;
+}
+.catalog__description {
+  color: #A07B50;
+}
+.catalog__sortind-list {
+  list-style: none;
+  font-weight: 500;
+  display: flex;
+  padding: 0 43px;
+}
+.catalog__sortind-list li {
+  margin: 0 auto;
+}
+.catalog__sorting-link {
+  color: rgba(255, 255, 255, 0.2);
+}
+.catalog__sorting-link--current {
+  color: white;
+}
+.catalog__list {
+  list-style: none;
+}
+.faq {
+  background-color: #1F1C1D;
+}
+.faq__description {
+  text-align: center;
+  color: #A07B50;
+}
+.features {
+  background-color: #1F1C1D;
+}
+.features__description {
+  text-align: center;
+  color: #A07B50;
+}
+.features__list {
+  padding: 0;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 19.6px;
+  font-weight: 300;
+  color: white;
+}
+.page-header {
+  background-color: #181617;
+}
+.section__title {
+  text-align: center;
+  font-family: "Yeseva One", "Arial", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.34px;
+}
+@media (min-width: 770px) {
+  .section__title {
+    font-size: 36px;
+  }
+}
+.staff {
+  background-color: #181617;
+  text-align: center;
+}
+.staff__description {
+  color: #A07B50;
+}
+.staff__name {
+  color: #A07B50;
+}
+.staff__position {
+  color: #A07B50;
+}
+.staff__content {
+  color: rgba(255, 255, 255, 0.72);
+}
+.staff__social {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
