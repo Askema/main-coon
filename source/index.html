@@ -11,7 +11,13 @@
 
 <body class="page-body">
   <header class="page-header">
-    <div class="page-header__logo-wrapper"><a class="page-header__logo"></a></div>
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo">
+        <svg width="55" height="25" viewBox="0 0 55 25">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
     <section class="about-header section">
       <p class="about-header__from">Новосибирск</p>
       <h1 class="about-header__title title">Питомник Мейн-Кунов</h1>
@@ -20,7 +26,31 @@
         <a href="#" class="about-header__link btn">Смотреть котиков</a>
       </div>
     </section>
-    <nav class="nav"></nav>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="" class="nav__link">
+            <svg width="13" height="8" viewBox="0 0 13 8">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">
+            <svg width="15" height="10" viewBox="0 0 15 10">
+              <use xlink:href="img/sprite.svg#Twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">
+            <svg width="5" height="10" viewBox="0 0 5 10">
+              <use xlink:href="img/sprite.svg#Facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page-main">
     <section class="catalog section">
@@ -28,21 +58,43 @@
       <p class="catalog__description">Все представители нашего питомника имеют ветеринарный паспорт с отметками о
         прививках и документ с родословной</p>
       <ul class="catalog__sortind-list">
-        <li class="catalog__sorting-item"><a href="#" class="catalog__sorting-link catalog__sorting-link--current">Коты</a></li>
+        <li class="catalog__sorting-item"><a href="#"
+            class="catalog__sorting-link catalog__sorting-link--current">Коты</a></li>
         <li class="catalog__sorting-item"><a href="#" class="catalog__sorting-link">Кошки</a></li>
         <li class="catalog__sorting-item"><a href="#" class="catalog__sorting-link">Котята</a></li>
       </ul>
-      <ul class="catalog__list">
-        <li class="catalog__item"></li>
-        <li class="catalog__item"></li>
-        <li class="catalog__item"></li>
-      </ul>
-      <a href="#" class="catalog__link btn">Смотреть больше</a>
+      <div class="catalog__slider slider__list slider__container">
+        <div class="slider__item">
+          <img class="slider__img slider__img--first" src="img/catalog-1-desktop.jpg" width="530" height="530"
+            alt="Черный котик">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img slider__img--first" src="img/catalog-2-desktop.jpg" width="519" height="214"
+            alt="Белый котик">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img slider__img--first" src="img/catalog-3-desktop.jpg" width="535" height="241"
+            alt="Коричневый котик">
+        </div>
+      </div>
+      <button class="catalog__slider-button catalog__slider-button--prev">
+        <span class="visually-hidden">Предыдущий слайд</span>
+      </button>
+      <button class="catalog__slider-button catalog__slider-button--next">
+        <span class="visually-hidden">Следующий слайд</span>
+      </button>
+      <div class="catalog__btn-wrapper">
+        <a href="#" class="catalog__btn btn">Смотреть больше</a>
+      </div>
+
     </section>
     <section class="features section">
       <h2 class="features__title section__title">Особенности породы</h2>
       <p class="features__description">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом
         этого питомца, вы получите умное животное, которому нет равных </p>
+      <div class="features__img">
+        <img src="img/features-desktop.png" width="623" height="908" alt="Рыжий котик">
+      </div>
       <ul class="features__list">
         <li class="features__item">Легко уживается в семьях с детьми или другими животными</li>
         <li class="features__item">Выполняет команды как дрессированная собака</li>
@@ -54,9 +106,24 @@
       <h2 class="about__title section__title">Почему именно мы?</h2>
       <p class="about__description">Приобретая животное в нашем питомнике, вы получите</p>
       <ul class="about__list">
-        <li class="about__item">Бесплатное ветеринарное обслуживание 5 лет</li>
-        <li class="about__item">Консультирование по любому вопросу 24 часа в сутки</li>
-        <li class="about__item">Индивидуальный подбор питания для вашего кота</li>
+        <li class="about__item">
+          <svg width="98" height="107" viewBox="0 0 98 107">
+            <use xlink:href="img/sprite.svg#vet"></use>
+          </svg>
+          <p>Бесплатное ветеринарное обслуживание 5 лет</p>
+        </li>
+        <li class="about__item">
+          <svg width="107" height="95" viewBox="0 0 107 95">
+            <use xlink:href="img/sprite.svg#all-the-time"></use>
+          </svg>
+          <p>Консультирование по любому вопросу 24 часа в сутки</p>
+        </li>
+        <li class="about__item">
+          <svg width="70" height="108" viewBox="0 0 70 108">
+            <use xlink:href="img/sprite.svg#food"></use>
+          </svg>
+          <p>Индивидуальный подбор питания для вашего кота</p>
+        </li>
       </ul>
     </section>
     <section class="care section">
@@ -99,16 +166,44 @@
       <p class="staff__description">Все сотрудники нашего питомника дипломированые специалисты
         в области фелинологии и ветеринарии</p>
       <div class="staff__slider slider">
+        <div class="staff__img-wrapper">
+          <img src="img/staff-desktop.jpg" width="360" height="356" alt="Работник">
+        </div>
         <div class="staff__item-wrapper">
-          <p class="staff__name">Серёжа Попов</p>
-          <p class="staff__position">Основатель питомника</p>
-          <p class="staff__content">Наш питомник занимается разведением Мейн-Кунов
-            на протяжении 15 лет. Мы в ответе за каждого
-            приобретенного вами питомца</p>
+          <blockquote>
+            <cite>
+              <p class="staff__name">Серёжа Попов</p>
+              <p class="staff__position">Основатель питомника</p>
+            </cite>
+            <p class="staff__content">Наш питомник занимается разведением Мейн-Кунов
+              на протяжении 15 лет. Мы в ответе за каждого
+              приобретенного вами питомца</p>
+          </blockquote>
           <ul class="staff__social social">
-            <li class="social__item"><span class="visually-hidden">Фейсбук</span></li>
-            <li class="social__item"><span class="visually-hidden">Твиттер</span></li>
-            <li class="social__item"><span class="visually-hidden">Вконтакте</span></li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg width="7" height="14" viewBox="0 0 7 14">
+                  <use xlink:href="img/sprite.svg#Facebook"></use>
+                </svg>
+              </a>
+              <span class="visually-hidden">Фейсбук</span>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg width="20" height="14" viewBox="0 0 20 14">
+                  <use xlink:href="img/sprite.svg#Twitter"></use>
+                </svg>
+              </a>
+              <span class="visually-hidden">Твиттер</span>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg width="21" height="12" viewBox="0 0 21 12">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+              <span class="visually-hidden">Вконтакте</span>
+            </li>
           </ul>
         </div>
         <button type="button" class="slider__button slider__button--prev">
@@ -154,10 +249,14 @@
     <section class="reviews section">
       <h2 class="reviews__title section__title">Отзывы</h2>
       <div class="reviews__slider">
+        <div class="reviews__img-wrapper">
+          <img src="img/reviews-desktop.jpg" width="481" height="331">
+        </div>
         <div class="reviews__item">
           <blockquote class="reviews__bq">
             <cite class="reviews__item-title">Серёжа Попов</cite>
-            <p class="reviews__item-comment">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом
+            <p class="reviews__item-comment">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно
+              умен и воспитан. Огромным плюсом
               питомника является возможность консультироваться в любое время</p>
           </blockquote>
           <div class="reviews__item-content">
@@ -165,11 +264,17 @@
             <ul class="reviews__social">
               <li class="reviews__social-item">
                 <a href="#" class="reviews__link">
+                  <svg width="14" height="10" viewBox="0 0 14 10">
+                    <use xlink:href="img/sprite.svg#Twitter"></use>
+                  </svg>
                   <span class="visually-hidden">Твиттер</span>
                 </a>
               </li>
               <li class="reviews__social-item">
                 <a href="#" class="reviews__link">
+                  <svg width="13" height="8" viewBox="0 0 13 8">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
                   <span class="visually-hidden">ВКонтакте</span>
                 </a>
               </li>
@@ -189,21 +294,32 @@
 
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" aria-label="Логотип питомника Мейн Кунов">
-        Логотип питомника Мейн Кунов
+        <svg width="55" height="25" viewBox="0 0 55 25">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
       </a>
       <ul class="page-footer__list">
         <li class="page-footer__item">
           <a href="#" class="page-footer__link">
+            <svg width="7" height="14" viewBox="0 0 7 14">
+              <use xlink:href="img/sprite.svg#Facebook"></use>
+            </svg>
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li class="page-footer__item">
           <a href="#" class="page-footer__link">
+            <svg width="20" height="14" viewBox="0 0 20 14">
+              <use xlink:href="img/sprite.svg#Twitter"></use>
+            </svg>
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
         <li class="page-footer__item">
           <a href="#" class="page-footer__link">
+            <svg width="21" height="12" viewBox="0 0 21 12">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
