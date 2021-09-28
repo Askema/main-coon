@@ -16,6 +16,17 @@
 a {
   text-decoration: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 @font-face {
   font-family: "Yeseva One";
   src: url("../../fonts/yesevaone.woff2") format("woff2"), url("../../fonts/yesevaone.woff") format("woff");
@@ -96,6 +107,7 @@ a {
 .catalog {
   text-align: center;
   background-color: #1F1C1D;
+  position: relative;
 }
 .catalog__description {
   color: #A07B50;
@@ -118,12 +130,58 @@ a {
 .catalog__list {
   list-style: none;
 }
+/*
+.catalog__slider-button {
+  position: relative;
+
+  &--next {
+    height: 20px;
+
+    &::before {
+      .pseudo();
+      right: 20px;
+      background-color: white;
+      height: 20px;
+      width: 2px;
+      transform: rotate(-40deg);
+    }
+
+    &::after {
+      .pseudo();
+      right: 20px;
+      top: 14px;
+      background-color: white;
+      height: 20px;
+      width: 2px;
+      transform: rotate(40deg);
+    }
+    .pseudo-hover(blue);
+  }
+}
+*/
 .faq {
   background-color: #1F1C1D;
 }
 .faq__description {
   text-align: center;
   color: #A07B50;
+}
+.faq__item {
+  display: flex;
+  flex-direction: column;
+}
+.faq__question {
+  text-align: start;
+  font-weight: 500;
+  border: 0.5px solid rgba(160, 123, 80, 0.41);
+  color: #DDD0C3;
+  padding: 20px;
+  background: transparent;
+}
+.faq__answer {
+  border: 0.5px solid rgba(160, 123, 80, 0.41);
+  color: #DDD0C3;
+  padding: 20px;
 }
 .features {
   background-color: #1F1C1D;
@@ -142,8 +200,47 @@ body {
   font-weight: 300;
   color: white;
 }
+.page-footer {
+  background: #151313;
+  text-align: center;
+}
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.page-footer__list {
+  padding: 0;
+  list-style: none;
+}
+.page-footer__link--address {
+  color: #D6CCC2;
+}
+.page-footer__link--tel {
+  color: #FDF2E6;
+}
 .page-header {
   background-color: #181617;
+}
+.reviews {
+  background-color: #1F1C1D;
+  text-align: center;
+}
+.reviews__item-title {
+  font-style: normal;
+  font-weight: 500;
+}
+.reviews__item-comment {
+  color: rgba(255, 255, 255, 0.72);
+}
+.reviews__item-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #A07B50;
+}
+.reviews__social {
+  display: flex;
+  list-style: none;
 }
 .section__title {
   text-align: center;

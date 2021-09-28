@@ -1,6 +1,7 @@
 .catalog {
   text-align: center;
   background-color: @bg-color2;
+  position: relative;
 }
 
 .catalog__description {
@@ -29,3 +30,34 @@
 .catalog__list {
   list-style: none;
 }
+
+//CSS-стрелки на слайдере
+/*
+.catalog__slider-button {
+  position: relative;
+
+  &--next {
+    height: 20px;
+
+    &::before {
+      .pseudo();
+      right: 20px;
+      background-color: white;
+      height: 20px;
+      width: 2px;
+      transform: rotate(-40deg);
+    }
+
+    &::after {
+      .pseudo();
+      right: 20px;
+      top: 14px;
+      background-color: white;
+      height: 20px;
+      width: 2px;
+      transform: rotate(40deg);
+    }
+    .pseudo-hover(blue);
+  }
+}
+*/

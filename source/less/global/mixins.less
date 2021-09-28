@@ -1,0 +1,15 @@
+.pseudo(@display: block; @position: absolute; @content: '') {
+  content: @content;
+  display: @display;
+  position: @position;
+}
+
+.pseudo-hover(@background-color) {
+  &:hover::after {
+    background-color: @background-color;
+  }
+
+  &:hover::before {
+    background-color: @background-color;
+  }
+}
